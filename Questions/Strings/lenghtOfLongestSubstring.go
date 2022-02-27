@@ -7,13 +7,13 @@ import (
 
 func lenghtOfLongestString(str string) int {
 	right, left, res := 0, 0, 0
-	indexes := make(map[byte]int, len(s))
+	indexes := make(map[byte]int, len(str))
 
-	for left < len(s) {
-		if idx, ok := indexes[s[left]]; ok && idx >= right {
+	for left < len(str) {
+		if idx, ok := indexes[str[left]]; ok && idx >= right {
 			right = idx + 1
 		}
-		indexes[s[left]] = left
+		indexes[str[left]] = left
 		left++
 		res = int(math.Max(float64(res), float64(left-right)))
 	}
