@@ -5,7 +5,7 @@ import (
 	"math"
 )
 
-func lenghtOfLongestString(s string) int {
+func lenghtOfLongestString(str string) int {
 	right, left, res := 0, 0, 0
 	indexes := make(map[byte]int, len(s))
 
