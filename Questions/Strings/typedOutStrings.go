@@ -31,7 +31,7 @@ func validate(s string) []string {
 }
 
 func main() {
-	s := "ab#C"
+	s := "ab#c"
 	t := "ab#c"
 	fmt.Println(CompareBackSpac(s, t))
 }
